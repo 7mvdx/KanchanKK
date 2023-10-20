@@ -1,0 +1,367 @@
+<html>
+  <head>
+  <title>Kanchan Khurana</title>
+ 
+  <style>
+  body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', serif;
+  
+}
+
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height:100px;
+    background-color: #faa0a0;
+}
+
+.nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family:'Franklin Gothic Medium', serif;
+      text-transform: uppercase;
+      align-items: center;
+      margin-right: 20px;
+      height: 100px;
+      width:100%;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: white;
+      padding: 35px 20px;
+      text-transform: uppercase;
+    }
+
+    .logo img {
+      height: 100%;
+      width: 100px;
+      padding: 0;
+    }
+
+    main {
+      margin-top: 100px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(https://imgur.com/VRAI9t2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 60px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: aqua;
+      color: black;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px grey;
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: grey;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      max-width: 100%;
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: grey;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #faa0a0;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      margin-top:15%;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .social-links img {
+      margin: 0 10px;
+    }
+
+    /* scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #faa0a0;
+      border-radius: 10px;
+    }
+    .about-me{
+        margin:0;
+        padding:0;
+        display:flex;
+       
+        justify-content: center;
+        height:250;
+        width:80%;
+    }
+    .about-me-text {
+        width:50%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+   
+    .about-me img {
+        width:350px;
+        height:auto;
+
+
+    }
+
+    .about-me .img {
+        width:50%;
+        height:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .about100 {
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+
+   .menu {
+    width:30px;
+    height:21px;
+    right:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    top:40;
+    display:none;
+
+    
+    & .line {
+      height:5px;
+      width:100%;
+      background-color:rgb(255, 255, 255);
+      border-radius: 10px;
+
+    }
+  }
+
+  .nav-items a .inA:hover {
+    background-color: #cc7474;
+      
+    }
+
+  @media (max-width:800px) {
+
+    .menu {
+      display:flex;
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    .nav-items {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: flex-end;
+      margin-top:280px;
+    }
+
+    .nav-items a {
+      display:none;
+    }
+
+    .nav-items a.active {
+      display:flex;
+      
+    }
+
+    .header.active {
+      background-color: #faa0a0;
+      height:600px;
+    }
+
+    .nav-items .logo{
+      display:none;
+    } 
+  }
+  </style>
+  </style>
+</head>
+
+<body>
+    <header class="header">
+      <nav class="nav-items">
+            <a href="Home.html"><div class="inA">Home</div></a>
+            <a href="About.html"><div class="inA">About Us</div></a>
+            <a href="Services.html"><div class="inA">Services</div></a>
+            <p href="#" class="logo">
+                <img src="https://i.imgur.com/VcAU7sr.jpg" alt="Logo">
+            </p>
+            <a href="Products.html"><div class="inA">Products</div></a>
+            <a href="Gallery.html"><div class="inA">Gallery</div></a>
+            <a href="Contact.html"><div class="inA">Contact</div></a>
+          </nav>
+            <div class="menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>Makeup Services</h1>
+        <p>We are a professional makeup company offering a wide range of makeup services and tutorials.</p>
+        <button><a href="About.html">Learn More</a></button>
+      </div>
+      <div class="achievements">
+        <div class="work">
+          <i class="fas fa-atom"></i>
+          <p class="work-heading">Products</p>
+          <p class="work-text">We offer a wide range of makeup products that are designed to enhance your beauty. Our product line includes high-quality cosmetics for various purposes and occasions.</p>
+        </div>
+        <div class="work">
+          <i class="fas fa-skiing"></i>
+          <p class="work-heading">Services</p>
+          <p class="work-text">Our team of skilled makeup artists offers a variety of services to cater to your unique needs. From natural and everyday makeup to glamorous and special effects, we provide professional makeup application for any desired look.</p>
+        </div>
+        <div class="work">
+          <i class="fas fa-ethernet"></i>
+          <p class="work-heading">Contact</p>
+          <p class="work-text">We are available during our business hours to assist you and answer any questions you may have. We look forward to serving you and helping you achieve your desired makeup look!</p>
+        </div>
+      </div>
+      <div class="about100">
+      <div class="about-me">
+        <div class="about-me-text">
+          <h2>About Us</h2>
+          <p>We are a passionate team of makeup artists dedicated to providing top-notch makeup services and tutorials. With years of experience in the industry, we strive to create stunning looks that enhance natural beauty.</p>
+          <p>Our goal is to empower individuals to feel confident and express their unique style through the art of makeup.</p>
+        </div>
+        <div class="img">
+        <img src="https://i.imgur.com/V2XDyJe.jpg">
+    </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+      <p>&copy; 2019 Kanchan Khurana</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100063074027808&mibextid=LQQJ4d"><img src="https://img.icons8.com/small/16/ffffff/facebook.png"/></a>
+        <a href="https://www.instagram.com/makeupbykanchankk"><img src="https://img.icons8.com/small/16/ffffff/instagram-new.png"/></a>
+      </div>
+    </footer>
+<script>
+  const menu = document.querySelector(".menu");
+  const nav = document.querySelectorAll(".nav-items a");
+  // const nav = document.getElementsByClassName("nav-items")[0].getElementsByClassName("a")[0]
+  const header = document.querySelector(".header");
+
+  menu.addEventListener('click', () => {
+    header.classList.toggle('active');
+    nav.forEach(item => item.classList.toggle('active'));
+    // nav.classList.toggle('active');
+    
+  });
+</script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<html>
+  <head>
+    <title>Kanchan Khurana - Services</title>
+    <style>
+      
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+  background:#faa0a0;
+  border-radius: 10px;
+}
+
+  body {
+  top: 100px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', serif;
+}
+
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.header {
+  position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height:100px;
+    background-color: #faa0a0;
+}
+
+.nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family:'Franklin Gothic Medium', serif;
+      text-transform: uppercase;
+      align-items: center;
+      margin-right: 20px;
+      height: 100px;
+      width:100%;
+    }
+
+.nav-items a {
+      text-decoration: none;
+      color: white;
+      padding: 35px 20px;
+    }
+    
+.logo img {
+        height: 100%;
+        width: 100px;
+        padding: 0;
+    }
+    
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+nav{
+        width: 100%;
+    }
+    
+.header{
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', serif;
+  }
+
+  footer {
+  margin-top :100px;
+	background-color: #faa0a0;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.social-links img {
+	margin: 0 10px;
+}
+
+  .mainService {
+    text-align:center;
+    height:400px;
+    background-image: url("https://www.theknot.com/tk-media/images/7c5fde6e-c1ef-4826-8159-f78ea22a9036");
+    object-fit:fill;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    color:white;
+    position: relative;
+    z-index: -10;
+  }
+
+  .mainService::before {
+    content:"";
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:0;
+    top:0;
+    background-color:rgba(0, 0, 0, 0.25);
+  }
+
+  .mainService h1, .mainService p {
+    z-index: 1;
+  }
+
+   .forGrid1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+
+   .forGrid2 {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+
+   .title1 , .title2 {
+    text-align: center;
+    margin:1rem;
+    font-size: 1.5rem;
+   }
+
+.title2 , .title1{
+    display:flex;
+    justify-content: space-around;
+}
+
+.forGrid1 .wow1, .forGrid1 .wow2, .forGrid2 .wow3, .forGrid2 .wow4  {
+display:flex;
+align-items: center;
+padding-top:1rem;
+background-color: #faa0a0;
+border-radius: 10px;
+padding: 30px;
+width: 60%;
+justify-content: center;
+justify-self: center;
+}
+
+.menu {
+    width:30px;
+    height:21px;
+    right:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    top:40;
+    display:none;
+
+    & .line {
+      height:5px;
+      width:100%;
+      background-color:rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+  }
+
+.nav-items a .inA:hover {
+    background-color: #cc7474;
+    }
+
+  @media (max-width:800px) {
+    .menu {
+      display:flex;
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    .nav-items {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: flex-end;
+      margin-top:280px;
+    }
+
+    .nav-items a {
+      display:none;
+    }
+
+    .nav-items a.active {
+      display:flex;
+    }
+
+    .header.active {
+      background-color: #faa0a0;
+      height:600px;
+    }
+
+    .nav-items .logo{
+      display:none;
+    } 
+  }
+    </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-items">
+          <a href="Home.html">Home</a>
+          <a href="About.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <p href="#" class="logo">
+              <img src="https://i.imgur.com/VcAU7sr.jpg" alt="Logo">
+          </p>
+          <a href="Products.html">Products</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </header>
+      <div class="mainService">
+        <h1>Makeup services</h1>
+        <p>Welcome to Kanchan Khurana, your premier destination for professional makeup services and tutorials</p>
+        <p>Our team of skilled makeup artists is dedicated to enhancing your natural beauty and ensuring you look and feel your best for any occasion.</p>
+      </div>
+        <div class="allforGrid1">
+        <div class="title1"><div class="text2">Wedding Makeup</div> <div class="text3">Party Makeup</div> </div>
+        <div class="forGrid1">
+            <div class="wow1"> Our expert makeup artists specialize in bridal makeup, ensuring you look radiant and flawless on your special day. We work closely with you to understand your vision and createa customized bridal look that complements your style and enhances your features.</div>
+        <div class="wow2"> Whether it's a glamorous evening event or a fun-filled party, our party makeup services are tailored to suit the occasion. We can create bold and dramatic looks or subtle and elegant styles, depending on your preferences and the event's theme.</div>
+    </div>
+</div>
+<div class="allforGrid2">
+    <div class="title2">
+        <div class="text1">Makeup Tutorials</div> <div class="text2">Teaching Sessions</div>
+    </div>
+    <div class="forGrid2">
+        <div class="wow3"> Our makeup tutorials are perfect for those who want to learn professional techniques and enhance their makeup skills. Our experienced makeup artists will guide you step by step, teaching you various application techniques, color combinations, and tips to achieve stunning makeup looks.</div>
+    <div class="wow4"> We also offer one-on-one teaching sessions where you can receive personalized guidance and instruction from our makeup experts. These sessions are ideal for individuals who want to explore advanced makeup techniques or gain in-depth knowledge about specific areas of makeup application.</div>
+  </div>
+</div>
+      <div class="explainService">
+      </div>
+      <footer>
+        <p>&copy; 2019 Kanchan Khurana</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100063074027808&mibextid=LQQJ4d"><img src="https://img.icons8.com/small/16/ffffff/facebook.png"/></a>
+          <a href="https://www.instagram.com/makeupbykanchankk"><img src="https://img.icons8.com/small/16/ffffff/instagram-new.png"/></a>
+        </div>
+      </footer>
+      <script>
+  const menu = document.querySelector(".menu");
+  const nav = document.querySelectorAll(".nav-items a");
+  // const nav = document.getElementsByClassName("nav-items")[0].getElementsByClassName("a")[0]
+  const header = document.querySelector(".header");
+
+  menu.addEventListener('click', () => {
+    header.classList.toggle('active');
+    nav.forEach(item => item.classList.toggle('active'));
+    // nav.classList.toggle('active');
+  });
+      </script>
+
+</body>
+
+</html>

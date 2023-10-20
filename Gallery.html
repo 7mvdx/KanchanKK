@@ -1,0 +1,384 @@
+<html>
+    <head>
+    <title>Kanchan Khurana - Gallery</title>
+    <style>
+body {
+  top: 100px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', serif;
+}
+
+* {
+box-sizing: border-box;
+
+margin:0;
+padding:0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height:100px;
+    background-color: #faa0a0;
+    z-index: 100;
+}
+
+.nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family:'Franklin Gothic Medium', serif;
+      text-transform: uppercase;
+      align-items: center;
+      margin-right: 20px;
+      height: 100px;
+      width:100%;
+    }
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    padding: 35px 20px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100px;
+    padding: 0;
+}
+
+.inside-showcase {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #e6c099;
+    font-family: 'Franklin Gothic Medium', serif;
+    font-size: 50px;
+}
+
+.inside-showcase::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 1000px;
+}
+
+.inside-showcase img {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    right: 15%;
+    border-radius: 30%;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 250px;
+}
+
+.inside-showcase img::before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.gallery-showcase {
+    position: relative;
+}
+
+.gallery-showcase .inside-showcase {
+    display: none;
+}
+
+.prev,
+.next {
+    position: absolute;
+    bottom: 43%;
+    font-size: 50px;
+    padding: 12px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.bodying {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 500px;
+    text-align: center;
+}
+
+.floor img {
+    width: 100%;
+    height: 80%;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    height:350px;
+}
+
+.videoCategory h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.video video {
+    width: 30%;
+    height: auto;
+    image-rendering: optimizeQuality;
+}
+
+.allImg {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.allImg img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover; 
+}
+
+.imgCategory {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #faa0a0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 70px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links img {
+    margin: 0 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #faa0a0;
+    border-radius: 10px;
+}
+.text-content{
+    margin-right: 100px;
+}
+
+.nav-items a .inA:hover {
+    background-color: #cc7474;
+    }
+
+    .menu {
+    width:30px;
+    height:21px;
+    right:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    top:40;
+    display:none;
+
+    & .line {
+      height:5px;
+      width:100%;
+      background-color:rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width:800px) {
+    .menu {
+      display:flex;
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    .nav-items {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: flex-end;
+      margin-top:280px;
+    }
+
+    .nav-items a {
+      display:none;
+    }
+
+    .nav-items a.active {
+      display:flex;
+    }
+
+    .header.active {
+      background-color: #faa0a0;
+      height:600px;
+    }
+
+    .nav-items .logo{
+      display:none;
+    } 
+  }
+    </style>
+</head>
+<body>
+        <header class="header">
+            <nav class="nav-items">
+                  <a href="Home.html">Home</a>
+                  <a href="About.html">About Us</a>
+                  <a href="Services.html">Services</a>
+                  <p href="#" class="logo">
+                      <img src="https://i.imgur.com/VcAU7sr.jpg" alt="Logo">
+                  </p>
+                  <a href="Products.html">Products</a>
+                  <a href="Gallery.html">Gallery</a>
+                  <a href="Contact.html">Contact</a>
+            </nav>
+            <div class="menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+          </header>
+    <div class="gallery-showcase">
+    
+    <div class="inside-showcase">
+        <img src="https://img.freepik.com/free-photo/beautiful-woman-face-hand-make-up_1150-11283.jpg?w=1800&t=st=1696085235~exp=1696085835~hmac=01fd115dc12ac115476790bfc5ec71dce807a2ad5b52c0897dc94e9133683ccc" alt="">
+        <div class="text-content">BeautyBlend: Your Destination for Flawless Makeup Essentials</div>
+    </div>
+    <div class="inside-showcase">
+        <img src="https://img.freepik.com/free-photo/beautiful-asian-woman-white-tshirt-smile-with-happiness-hand-hold-blush-makeup-cosmetic-items-bedroom-with-healthy-face-skincare-concept_609648-2436.jpg?w=1800&t=st=1696085230~exp=1696085830~hmac=d80630b1c099edd5f61e1ae6c818eed314328c3ea5411de96a0de0c4390c9ff7" alt="">
+        <div class="text-content">GlamGlow: Unleash Your Inner Beauty with Our Makeup Essentials</div>
+    </div>
+    <div class="inside-showcase">
+        <img src="https://img.freepik.com/free-photo/make-up-artist-getting-model-ready-photoshootin_23-2149305147.jpg?w=1800&t=st=1696085239~exp=1696085839~hmac=f5b81d122dd7f28e56c2d571495a4a0db93da6b9d632c30cb29b33e87cd3f4b2" alt="">
+        <div class="text-content">Makeup Mastery: Elevate Your Look with Our Premium Beauty Tools</div>
+    </div>
+    <div class="prev" onClick="whenClick(-1)">&#10094</div>
+    <div class="next" onClick="whenClick(1)">&#10095</div>
+    </div>
+    <div class="bodying">
+    <div class="floor">
+    <img src="https://dev.rodpub.com/images/173/234_main.jpg" alt="">
+    <h2>example of product what does it help on the skin</h2>
+    </div>
+    <div class="floor">
+        <img src="https://www.byrdie.com/thmb/12mFmSKEoHK-NM8cgjpM06KFq1M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/All-the-products-you-Need-to-build-the-perfect-Makeup-collection-4120731_800x1000_rev_02-4ec6f926329c47099aeba89fbcd6565a.jpg" alt="">
+        <h2>example of product what does it help on the skin</h2>
+    </div>
+    </div>
+    <div class="videoCategory">
+        <h2>Video</h2>
+    </div>
+    <div class="video">
+        <video width="320px" height="300px" controls >
+            <source src="https://i.imgur.com/9Q0qtg1.mp4" type="video/mp4">
+        </video>
+        <video width="320px" height="300px" controls >
+            <source src="https://i.imgur.com/HaAtTUs.mp4" type="video/mp4">
+        </video>
+        <video width="320px" height="300px" controls >
+            <source src="https://i.imgur.com/6NovQqa.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="imgCategory">
+        <h2>Gallery Image</h2>
+    </div>
+    <div class="allImg">
+        <a href="https://imgur.com/7tBjutg"><img src="https://i.imgur.com/7tBjutg.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/zErqu1B"><img src="https://i.imgur.com/zErqu1B.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/ycXqBET"><img src="https://i.imgur.com/ycXqBET.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/6BTix9P"><img src="https://i.imgur.com/6BTix9P.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/CKcVPfn"><img src="https://i.imgur.com/CKcVPfn.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/9m8NMER"><img src="https://i.imgur.com/9m8NMER.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/NXASg7H"><img src="https://i.imgur.com/NXASg7H.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/vhBewfC"><img src="https://i.imgur.com/vhBewfC.jpg" title="source: imgur.com" /></a>
+        <a href="https://imgur.com/MO62YZt"><img src="https://i.imgur.com/MO62YZt.jpg" title="source: imgur.com" /></a>
+    </div>
+    <footer>
+        <p>&copy; 2019 Kanchan Khurana</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100063074027808&mibextid=LQQJ4d"><img src="https://img.icons8.com/small/16/ffffff/facebook.png"/></a>
+            <a href="https://www.instagram.com/makeupbykanchankk"><img src="https://img.icons8.com/small/16/ffffff/instagram-new.png"/></a>
+        </div>
+    </footer>
+
+    <script>
+let galleryIndex = 1;
+
+showGallery();
+
+function showGallery() {
+let Gallery1 = document.querySelectorAll(".gallery-showcase .inside-showcase");
+
+if (galleryIndex < 1){galleryIndex = Gallery1.length}
+else if (galleryIndex > Gallery1.length) {galleryIndex = 1}
+
+for (let i = 0; i <Gallery1.length; i++){
+    Gallery1[i].style.display = "none"
+}
+
+Gallery1[galleryIndex-1].style.display = "flex";
+}
+
+function whenClick(n) {
+    showGallery(galleryIndex += n)
+}
+  const menu = document.querySelector(".menu");
+  const nav = document.querySelectorAll(".nav-items a");
+  // const nav = document.getElementsByClassName("nav-items")[0].getElementsByClassName("a")[0]
+  const header = document.querySelector(".header");
+
+  menu.addEventListener('click', () => {
+    header.classList.toggle('active');
+    nav.forEach(item => item.classList.toggle('active'));
+    // nav.classList.toggle('active');
+  });
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>Kanchan Khurana - Products</title>
+    <style>
+        body {
+  top: 100px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', serif;
+}
+
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height:100px;
+    background-color: #faa0a0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+  background:#faa0a0;
+  border-radius: 10px;
+}
+
+.nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family:'Franklin Gothic Medium', serif;
+      text-transform: uppercase;
+      align-items: center;
+      margin-right: 20px;
+      height: 100px;
+      width:100%;
+    }
+
+.nav-items a {
+      text-decoration: none;
+      color: white;
+      padding: 35px 20px;
+    }
+    
+.logo img {
+        height: 100%;
+        width: 100px;
+        padding: 0;
+    }
+    
+h1{
+    color: black;
+    }
+    
+nav{
+        width: 100%;
+    }
+    
+.header{
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        z-index: 10;
+    }
+ 
+  footer {
+	background-color: #faa0a0;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.social-links img {
+	margin: 0 10px;
+}
+
+.image {
+    display:flex;
+    justify-content: flex-start;
+    height:500px;
+    align-items: center;
+    column-gap: 60px;
+   padding-right:60px;
+   width:100%;
+}
+
+.image img {
+    width:400px;
+    height:400px;
+    border:8px solid rgb(174, 108, 178)
+}
+
+.nameOfImage {
+position:relative;
+bottom:130px;
+}
+
+.explain {
+    height:650px;
+    background-image:url("https://media.cnn.com/api/v1/images/stellar/prod/201022102401-best-matte-lipstick-lead.jpg?q=w_2278,h_1282,x_0,y_0,c_fill");
+    color:white;
+    text-align: center;
+    position:relative;
+
+    & p , h1 {
+        position: relative;
+    }
+}
+
+.explain:before {
+    content: " ";
+    position:absolute;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.explain h1, .explain p {
+    padding-top:2rem;
+    color:white;
+}
+
+.bodying, .bodying1 {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 , .image2 {
+    margin-left: 3%;
+}
+
+.menu {
+    width:30px;
+    height:21px;
+    right:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    top:40;
+    display:none;
+
+    & .line {
+      height:5px;
+      width:100%;
+      background-color:rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+  }
+
+.nav-items a .inA:hover {
+    background-color: #cc7474;
+    }
+
+  @media (max-width:800px) {
+    .menu {
+      display:flex;
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    .nav-items {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: flex-end;
+      margin-top:280px;
+    }
+
+    .nav-items a {
+      display:none;
+    }
+
+    .nav-items a.active {
+      display:flex;
+    }
+
+    .header.active {
+      background-color: #faa0a0;
+      height:600px;
+    }
+
+    .nav-items .logo{
+      display:none;
+    } 
+  }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-items">
+              <a href="Home.html">Home</a>
+              <a href="About.html">About Us</a>
+              <a href="Services.html">Services</a>
+              <p href="#" class="logo">
+                  <img src="https://i.imgur.com/VcAU7sr.jpg" alt="Logo">
+              </p>
+              <a href="Products.html">Products</a>
+              <a href="Gallery.html">Gallery</a>
+              <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+      </header>
+      <div class="bodying">
+        <div class="image image1">
+<img src="https://i.imgur.com/6BTix9P.jpg" alt="">
+<div class="contentOfImage" display="inline">
+    <div class="nameOfImage">
+        Enhance your eyes with our stunning, high-quality eyelashes designed to elevate your makeup look effortlessly.    </div>
+    <div class="WhatIsGoodOfThisProduct">
+        Experience the perfect blend of comfort and style with our premium eyelashes that bring out the beauty in every blink.    </div>
+</div>
+</div>
+</div>
+<div class="bodying1">
+    <div class="image image2">
+<img src="https://i.imgur.com/7tBjutg.jpg" alt="">
+<div class="contentOfImage" display="inline">
+<div class="nameOfImage">
+    Achieve flawless, airbrushed makeup application with our premium makeup sponge. Designed with a unique texture and shape, our sponge ensures seamless blending and a smooth, professional finish every time.</div>
+<div class="WhatIsGoodOfThisProduct">
+    Elevate your makeup routine with our must-have beauty tool for effortless beauty.</div>
+</div>
+</div>
+</div>
+<div class="explain">
+    <h1>Why our product are good and help the skin</h1>
+    <img src="" alt="">
+    <p>
+        tell what good about our product can use like some scientific benefit
+    </p>
+</div>
+<footer>
+	<p>&copy; 2019 Kanchan Khurana</p>
+	<div class="social-links">
+		<a href="https://www.facebook.com/profile.php?id=100063074027808&mibextid=LQQJ4d"><img src="https://img.icons8.com/small/16/ffffff/facebook.png"/></a>
+		<a href="https://www.instagram.com/makeupbykanchankk"><img src="https://img.icons8.com/small/16/ffffff/instagram-new.png"/></a>
+	</div>
+</footer>
+<script>
+    const menu = document.querySelector(".menu");
+    const nav = document.querySelectorAll(".nav-items a");
+    // const nav = document.getElementsByClassName("nav-items")[0].getElementsByClassName("a")[0]
+    const header = document.querySelector(".header");
+  
+    menu.addEventListener('click', () => {
+      header.classList.toggle('active');
+      nav.forEach(item => item.classList.toggle('active'));
+      // nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
